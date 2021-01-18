@@ -1,0 +1,44 @@
+.clients-list {
+    display: inline-flex;
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-icon {
+        display: flex;
+        width: 170px;
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #AFB1B8;
+
+        transition: all 250ms linear;
+    
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    }
+    
+    &-item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+
+.clients-icon_logo {
+    fill:#AFB1B8;
+    transition: fill 250ms linear;
+    
+    .clients-icon:hover &,
+    .clients-icon:focus & {
+        fill: var(--accent-color);
+    }
+}
