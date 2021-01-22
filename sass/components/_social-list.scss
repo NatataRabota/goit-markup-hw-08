@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
 
-
     &_link {
         display: flex;
         justify-content: center;
@@ -14,15 +13,12 @@
 
         transition: background-color 250ms linear;
 
-            &:hover,
-            &:focus {
-                background-color: var(--accent-color);
-            }
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
     }
 }
-
-
-
 
 .social-list_icon {
     width: 20px;
