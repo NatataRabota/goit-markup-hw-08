@@ -1,26 +1,36 @@
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
+    font-size: 24px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     color: #000000;
 
     &-accent {
-        font-family: var(--secondary-font);
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.192;
-        letter-spacing: 0.03em;
         color: var(--accent-color);
     }
 }
 
 .footer-logo {
+    display: inline-block;
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
+    font-size: 24px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
     color: var(--first-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.192;
+    }
+
+    .footer-logo {
+        font-size: 26px;
+        line-height: 1.192;
+        color: var(--first-color);
+    }
 }
