@@ -13,11 +13,28 @@
 </head>
 
 <body class="page">
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
-            <a class="logo" href="./index.html" aria-label="логотип сайта"><span class="logo-accent">Web</span>Studio</a>
             <nav class="site-nav">
-                <ul class="menu-list">
+                <a class="logo" href="./index.html" aria-label="логотип сайта"><span class="logo-accent">Web</span>Studio</a>
+              
+                    <button 
+                      type="button" 
+                      class="menu-button is-open"
+                      aria-expanded="false"
+                      aria-controls="menu-container"
+                      data-menu-button>
+                        <svg class="menu" 
+                          width="40" 
+                          height="40"
+                          aria-label="Переключатель мобильного меню">
+                          <use class="menu" href="./img/sprite.svg#icon-menu"></use>
+                          <use class="menu-close" href="./img/sprite.svg#icon-menu-close"></use>
+                        </svg>
+                    </button>
+
+                <div class="menu-container is-open" id="menu-container" data-menu>
+                  <ul class="menu-list">
                     <li class="menu-list-item">
                         <a class="menu-list-link current" href="#">Студия</a>
                     </li>
@@ -27,9 +44,8 @@
                     <li class="menu-list-item">
                         <a class="menu-list-link" href="#">Контакты</a>
                     </li>
-                </ul>
-            </nav>
-            <address class="address">
+                  </ul>
+                  <address class="address">
                 <div class="contact">
                     <a class="contact-mail" href="mailto:info@devstudio.com">
                         <svg class="icon-mail" width="16" height="12">
@@ -44,9 +60,11 @@
                         +38 096 111 11 11
                     </a>
                 </div>
-            </address>
+                  </address>
+                </div>
+            </nav>
         </div>
-    </header> -->
+    </header>
     
     <main>
         <!-- HERO -->
@@ -488,5 +506,6 @@
     </div> --> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
