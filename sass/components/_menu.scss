@@ -14,6 +14,13 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .menu-list-link {
+        font-size: 18px;
+        line-height: 1.167;
+    }
+}
+
 .current {
     color: var(--accent-color)
 }
