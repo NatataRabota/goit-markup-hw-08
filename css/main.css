@@ -369,6 +369,17 @@ img {
   fill: var(--accent-color);
 }
 
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .form-policy-text {
   font-family: var(--main-font);
   font-weight: 400;
@@ -550,8 +561,8 @@ img {
   display: none;
 }
 
-.site-nav a,
-.contacts-nav a {
+.site-nav .a,
+.contacts-nav .a {
   display: inline-flex;
   font-family: var(--main-font);
   font-weight: 500;
@@ -594,8 +605,7 @@ img {
 }
 
 .contacts-nav .link,
-.site-nav .link,
-.footer .link {
+.site-nav .link {
   transition: color 250ms linear;
 }
 
@@ -672,6 +682,42 @@ img {
   }
   .contacts-nav {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+  }
+  .contacts-nav a {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+  }
+  .contacts-nav a {
+    padding: 32px 0;
+  }
+  .site-nav {
+    margin-left: 93px;
+  }
+  .contacts-nav {
+    display: flex;
+    align-items: center;
+  }
+  .contacts-nav .item + .item {
+    margin-left: 30px;
+  }
+  .mail-icon, .tel-icon {
+    width: 16px;
+    height: 12px;
+  }
+  .tel-icon {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -1043,6 +1089,7 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 8px;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms linear;
 }
 
 .footer-link-slogan,
