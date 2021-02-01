@@ -503,8 +503,6 @@ img {
 
 .header {
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -723,11 +721,22 @@ img {
 
 .hero {
   padding: 118px 0;
-  align-items: center;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--first-color);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
@@ -759,6 +768,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 100px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desk-1x.jpg");
   }
   .hero-title {
@@ -769,20 +779,8 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    padding: 200px 452px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desk-2x.jpg");
   }
-}
-
-.hero-title {
-  font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.615;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--first-color);
-  margin-bottom: 30px;
 }
 
 .modal-btn {
@@ -816,10 +814,6 @@ img {
 
 .features {
   padding: 60px 0;
-}
-
-.features-title-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .features-subtitle {
@@ -861,6 +855,12 @@ img {
   .features-title-item,
   .features-title .icon {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .features-title-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
