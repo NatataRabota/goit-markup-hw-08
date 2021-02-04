@@ -508,7 +508,6 @@ img {
 
 .footer-link-slogan,
 .footer-subscrib {
-  text-align: center;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
@@ -638,6 +637,16 @@ img {
   }
   .social-form-item-text {
     width: 358px;
+  }
+}
+
+.projects {
+  margin: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin: 94px 0;
   }
 }
 
